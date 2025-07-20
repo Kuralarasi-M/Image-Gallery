@@ -1,0 +1,57 @@
+.box,.box1.show{
+     display:grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     gap:20px;
+}
+.box1{
+     display: none;
+}
+.box1.show{
+    display:grid;
+}
+
+.dream img{
+    width:100% ;
+    height: 100%;
+     border-radius: 10px;
+     transition: transform 50ms;
+}
+.dream img:hover{
+    transform: scale(1.05);
+    border: 2px solid rgb(167, 125, 206);
+     box-shadow:6px 6px 10px rgb(184, 71, 184);
+}
+.dream{
+    display: flex;
+    flex-direction:column ;
+    row-gap: 20px;
+}
+h1{
+    
+    color: blueviolet;
+    animation: heading 5s linear infinite;
+    width: 100%;
+}
+@keyframes heading{
+    from{transform: translate(0%);}
+    to{transform: translate(100%);}
+}
+span{
+    color: blue;
+}
+
+.btn{
+     width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    
+}
+
+.but{
+     text-align: center;
+     margin: 10px 0px;
+}
+.bgtheme{
+    background-color: black;
+    color: white;
+}

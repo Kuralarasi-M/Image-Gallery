@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bgtheme">
+    <div class="container">
+        <div>
+            <img src="images/brightness_6_16dp_E3E3E3_FILL0_wght400_GRAD0_opsz20.png" class="theme">
+            <h1>Photo <span>Gallery</span></h1>
+        </div>
+        <div class="box">
+            <div class="dream">
+                 <img src="images/pexels-wangming-photo-115695-354939.jpg">
+            <img src="images/img1.jpg">
+            <img src="images/pexels-13nuance-561463.jpg">
+            <img src="images/pexels-achim-bongard-87217-352096.jpg">
+            </div>
+             <div class="dream">
+              <img src="images/pexels-minan1398-853168.jpg">
+            <img src="images/pexels-bri-schneiter-28802-346529.jpg">
+            <img src="images/pexels-david-besh-884788.jpg">
+            <img src="images/pexels-eberhardgross-1421903.jpg">
+            </div>
+            <div class="dream">
+            <img src="images/pexels-maoriginalphotography-1485894.jpg">
+            <img src="images/pexels-eberhardgross-640781.jpg">
+            <img src="images/pexels-vladbagacian-1368382.jpg">
+            <img src="images/pexels-fox-58267-1172675.jpg">
+             </div>
+             <div class="dream">
+            <img src="images/pexels-todd-trapani-488382-1420440.jpg">
+            <img src="images/pexels-pixabay-40784.jpg">
+            <img src="images/pexels-souvenirpixels-414612.jpg">
+            <img src="images/pexels-pengwhan-1767434.jpg">
+             </div>
+            
+        </div>  
+        <div class="but">
+                <button class="btn">More</button>
+        </div>
+       
+        <div class="box1">
+            <div class="dream">
+            <img src="images/pexels-pixabay-355465.jpg">
+            <img src="images/pexels-iriser-1379640.jpg">
+            <img src="images/pexels-jill-wellington-1638660-40815.jpg">
+            <img src="images/pexels-todd-trapani-488382-1420440.jpg">
+            </div>
+             <div class="dream">
+              <img src="images/pexels-kasperphotography-1042423.jpg">
+            <img src="images/pexels-bri-schneiter-28802-346529.jpg">
+            <img src="images/pexels-lastly-808465.jpg">
+            <img src="images/pexels-mastercowley-1128797.jpg">
+            </div>
+            <div class="dream">
+            <img src="images/pexels-matthew-montrone-230847-1374295.jpg">
+            <img src="images/pexels-13nuance-561463.jpg">
+            <img src="images/pexels-iriser-1379640.jpg">
+            <img src="images/pexels-nietjuhart-776653.jpg">
+             </div>
+             <div class="dream">
+            <img src="images/pexels-pixabay-268533.jpg">
+            <img src="images/pexels-philippedonn-1169754.jpg">
+            <img src="images/pexels-pixabay-257360.jpg">
+            <img src="images/pexels-pixabay-262713.jpg">
+             </div>
+            
+        </div>  
+       
+           
+        
+        
+    </div>
+    <script>
+          const btn=document.querySelector('.btn');
+          const box1=document.querySelector('.box1');
+          btn.addEventListener('click',()=>{
+               box1.classList.toggle("show");
+               btn.textContent = box1.classList.contains("show") ? "Hide" : "More";
+          });
+          const imgbtn=document.querySelector('.theme');
+          const bg=document.querySelector('.bgtheme');
+          imgbtn.addEventListener('click',()=>{
+            bg.classList.toggle('bgtheme');
+          });
+    </script>
+</body>
+</html>

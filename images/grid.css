@@ -1,0 +1,130 @@
+.gridbox{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    background-color: aqua;
+    gap:10px;
+}
+.gridbox > div{
+    border: 2px solid blue;
+    text-align: center;
+    padding: 30px;
+    
+}
+.gridbox1{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    background-color: aqua;
+    gap:10px;
+}
+.gridbox1 > div{
+    border: 2px solid blue;
+    text-align: center;
+    padding: 30px;
+    
+}
+.gridbox2{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(200px,1fr));
+    background-color:gray;
+    gap:10px;
+}
+.gridbox2 > div{
+    border: 2px solid black;
+    text-align: center;
+    padding: 30px;
+    
+}
+ /* .box2{
+    /* grid-column-start: 2;
+    grid-column-end: 4; */
+    /* grid-column: 2/4; 
+    grid-column: 2/ span 2;
+} */
+/* .box3{
+    grid-column:1/span 3;
+    
+}
+.box6{
+    grid-row:3 /span 3;
+    
+} */
+ :root{
+    --voilet:rgb(141, 35, 198);
+ }
+ .box1{
+    /* grid-area: 1/1/3/3; */
+    grid-area: 1/1/span 2 /span 2;
+ }
+ body{
+    display:grid;
+    grid-template-areas:
+    'menu  menu menu menu menu'
+    'sidebar content content content ads'
+    'foot  foot foot foot foot';
+     grid-template-columns: repeat(5,minmax(auto,1fr));
+     grid-template-rows:50px 1fr 200px;
+     height: 100vh;
+     gap:10px;
+     position: relative;;
+ }  
+
+ nav{
+    grid-area: menu;
+    background-color:var(--voilet);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    left:0px;
+ }
+nav a{
+     border:2px solid transparent;
+      padding:10px ;
+ }
+ nav a:hover{
+     border:2px solid  black;
+     background-color: gray;
+     color: white;
+ }
+ .sidebar{
+     grid-area: sidebar;
+    background-color:var(--voilet);
+    display: flex;
+    position: sticky;
+    top: 10px;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+    justify-content: center;
+    text-align: center; 
+   
+ }
+ .sidebar p{
+     border:2px solid transparent;
+      padding:10px 0px ;
+ }
+ .sidebar p:hover{
+     border:2px solid  black;
+     background-color: gray;
+     color: white;
+ }
+main{
+    grid-area: content;
+  
+    height: 100vh;
+    overflow: auto;
+    
+}
+.maincontent{
+    margin: 10px;
+}
+.ads{
+    grid-area: ads;
+    background-color:var(--voilet);
+    position: sticky;
+}
+footer{
+    grid-area: foot;
+    border: 2px solid black;
+}
